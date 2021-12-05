@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title id="title">
+        You Treat
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main-container">
+    <div class="name">
+        <h1>You Treat Restaurant</h1>
+    </div>
+ <div class="nav-item">
+        <div class="nav-link">
+          <a href="#title">home</a>
+        </div>
+        <div class="nav-link">
+            <a href="#menus">Menu</a>
+        </div>
+        <div class="nav-link">
+          <a href="#service">Service</a>
+        </div>
+        <div class="nav-link">
+          <a href="#contact">Contact</a>
+        </div>
+  </div>
+<br/>
+<br/>
+<div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="https://content3.jdmagicbox.com/comp/tiruvarur/h1/9999p4366.4366.190312184819.a5h1/catalogue/you-treat-tiruvarur-1jgpkjryj8.jpg" style="width:100%" height="500px">
+          <div class="text">shop</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="https://content3.jdmagicbox.com/comp/tiruvarur/h1/9999p4366.4366.190312184819.a5h1/catalogue/you-treat-thiruvarur-tiruvarur-juice-centres-nemrmkpzpf.jpg" style="width:100%" height="500px">
+          <div class="text">Inner View</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="https://i.ytimg.com/vi/rQ1VfOgbjIs/maxresdefault.jpg" style="width:100%" height="500px">
+          <div class="text">Customer eating time</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+</div>
+<br/>
+<br/>
+
+<h1 id="menus">Menu list</h1>
+    <div class="menu">
+        
+        <div class="FM1">
+            <h2>Milkshakes with icecream</h2>
+            <p>Nabati Rs.90</p>
+            <p>Oreo Rs.90</p>
+            <p>Chocolate Rs.90</p>
+            <p>Strawberry Rs.90</p>
+            <p>Sharjah Rs.100</p>
+            <p>Kitkat Rs.110</p>
+        </div>
+        <div class="FM2">
+            <h2>Veg Snacks</h2>
+            <p>French Fries Rs.40</p>
+            <p>Paneer roll Rs.60</p>
+            <p>Veg cutlet Rs.50</p>
+            <p>Peri peri fries Rs.50</p>
+        </div>
+        <div class="FM3">
+            <h2>Sandwich</h2>
+            <p>Veg sandwich Rs.50</p>
+            <p>Veg cheese sandwich Rs.60</p>
+            <p>Chicken sandwich Rs.70</p>
+            <p>Chicken cheese sandwich Rs.80</p>
+            <p>Chocolate sandwich Rs.60</p>
+            <p>Cheese sandwich Rs.60</p>
+            <p>Bread omlette with cheese Rs.60</p>
+        </div>
+        <div class="FM4">
+            <h2>Non-Veg Snacks</h2>
+            <p>Chicken Roll Rs.60</p>
+            <p>Chicken nuggets Rs.80</p>
+            <p>Chicken popcorn Rs.70</p>
+            <p>Chicken samosa Rs.30</p>
+            <p>Chocolate sandwich Rs.60</p>
+            <p>Chicken cutlet Rs.50</p>
+        </div>
+        <div class="FM5">
+            <h2>Icecream scoops</h2>
+            <p>Brownie with ice cream Rs.70</p>
+            <p>Vannila Rs.50</p>
+            <p>Chocolate Rs.60</p>
+        </div>
+        <div class="FM6">
+            <h2>Burger</h2>
+            <p>Veg Burger Rs.50</p>
+            <p>Chicken Burger Rs.70</p>
+            <p>Veg tower Burger Rs.80</p>
+            <p>Chicken tower Burger Rs.110</p>
+            <p>Double cheese veg Burger Rs.85</p>
+            <p>Double cheese Chicken Burger Rs.90</p>
+        </div>
+    </div>
+        <h1 id="service">
+            Servcies
+        </h1>
+        <div class="menu-services">
+        
+            <div class="s1">
+              
+            </div>
+            <div class="s2">
+                            
+            </div>
+            <div class="s3">
+                               
+            </div>
+         
+        </div>
+        <div id="contact" class="contact">
+            <h1>Contact</h1>
+            <h2>Address: East Street, Thanjai Salai, Madappuram,Thiruvarur,<br/>Tamil Nadu 610001</h2>        
+        </div>
+
+    
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+</div>
+</body>
+</html>
